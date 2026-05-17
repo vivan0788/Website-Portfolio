@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Avinash Sahani | Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8fafc;
+color:#111827;
+line-height:1.6;
+}
+
+section{
+padding:100px 10%;
+}
+
+h2{
+font-size:40px;
+margin-bottom:30px;
+}
+
+p{
+font-size:16px;
+}
+
+/* Navbar */
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+background:white;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:#111;
+font-weight:500;
+}
+
+/* Hero */
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px;
+padding-top:140px;
+}
+
+.hero-text h1{
+font-size:65px;
+line-height:1.2;
+}
+
+.hero-text span{
+color:#2563eb;
+}
+
+.hero-text p{
+margin:25px 0;
+font-size:18px;
+max-width:550px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 35px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:10px;
+margin-right:15px;
+}
+
+.hero img{
+width:380px;
+border-radius:25px;
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+/* Cards */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+/* Skills */
+
+.skill{
+margin-bottom:25px;
+}
+
+.bar{
+background:#ddd;
+height:10px;
+border-radius:20px;
+overflow:hidden;
+margin-top:10px;
+}
+
+.fill{
+height:100%;
+background:#2563eb;
+}
+
+/* Timeline */
+
+.timeline-item{
+background:white;
+padding:30px;
+margin-bottom:20px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* Contact */
+
+.contact-box{
+background:white;
+padding:40px;
+border-radius:25px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero img{
+width:280px;
+}
+
+.hero-text h1{
+font-size:45px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">Avinash Sahani </div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>
+Hi, I'm <span>Avinash Sahani</span>
+</h1>
+
+<p>
+B.Tech Computer Science Engineering Student,
+Web Developer, App Developer, and
+Technology Enthusiast.
+I love building modern digital products.
+</p>
+
+<a href="#contact" class="btn">Hire Me</a>
+<a href="#projects" class="btn">Projects</a>
+
+</div>
+
+<img src="profile.png" alt="Profile">
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+
+I am a dedicated and self-motivated B.Tech
+Computer Science Engineering student with
+a strong interest in software development,
+web technologies, mobile applications,
+cybersecurity, and innovation.
+
+I enjoy learning new technologies,
+building real-world projects,
+and solving practical problems
+through programming.
+
+My goal is to become a highly skilled
+software engineer and create products
+that make a real impact.
+
+</p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skill">
+HTML & CSS
+<div class="bar">
+<div class="fill" style="width:95%"></div>
+</div>
+</div>
+
+<div class="skill">
+JavaScript
+<div class="bar">
+<div class="fill" style="width:85%"></div>
+</div>
+</div>
+
+<div class="skill">
+Flutter
+<div class="bar">
+<div class="fill" style="width:80%"></div>
+</div>
+</div>
+
+<div class="skill">
+Firebase
+<div class="bar">
+<div class="fill" style="width:78%"></div>
+</div>
+</div>
+
+<div class="skill">
+Python
+<div class="bar">
+<div class="fill" style="width:75%"></div>
+</div>
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Age Calculator App</h3>
+<p>
+Modern age calculator app
+with useful features.
+</p>
+</div>
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>
+Fully responsive personal
+portfolio website.
+</p>
+</div>
+
+<div class="card">
+<h3>Student Utility App</h3>
+<p>
+Helpful application for
+students.
+</p>
+</div>
+
+<div class="card">
+<h3>Cybersecurity Projects</h3>
+<p>
+Security learning and
+ethical hacking projects.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<h2>Education</h2>
+
+<div class="timeline-item">
+<h3>School Education</h3>
+<p>Your school details here</p>
+</div>
+
+<div class="timeline-item">
+<h3>Intermediate</h3>
+<p>Your intermediate details here</p>
+</div>
+
+<div class="timeline-item">
+<h3>B.Tech CSE</h3>
+<p>Currently pursuing B.Tech</p>
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section>
+
+<h2>Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Web Development</h3>
+<p>Modern websites.</p>
+</div>
+
+<div class="card">
+<h3>App Development</h3>
+<p>Android applications.</p>
+</div>
+
+<div class="card">
+<h3>UI Design</h3>
+<p>Clean interfaces.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section>
+
+<h2>Achievements & Goals</h2>
+
+<p>
+
+Learning every day,
+building projects,
+improving programming skills,
+and preparing for a successful
+software engineering career.
+
+</p>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<div class="contact-box">
+
+<p><b>Email:</b> alonevivanbabu@gmail.com</p>
+<p><b>Phone:</b> +91 7080183078</p>
+<p><b>GitHub:</b> github.com/vivan0788</p>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2026 Avinash Sahani. All Rights Reserved.
+
+</footer>
+
+</body>
+</html>
